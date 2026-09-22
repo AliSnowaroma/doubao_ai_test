@@ -54,6 +54,9 @@ function Sidebar() {
         </span>
       </div>
 
+      {/* 搜索遮罩：点击弹窗外区域关闭搜索 */}
+      {searchOpen && <div className="search-backdrop" onClick={closeSearch} />}
+
       {/* 搜索面板：点击图标后展开 */}
       {searchOpen && (
         <div className="search-panel">
