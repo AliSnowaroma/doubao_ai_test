@@ -36,6 +36,8 @@
   /* 搜索面板 */
   .search-panel {
     position: relative;
+    /* 高于遮罩层(90)，避免点击输入框时被遮罩拦截而关闭 */
+    z-index: 95;
     margin-bottom: 12px;
 
     .search-input-wrap {
